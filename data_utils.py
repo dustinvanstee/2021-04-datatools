@@ -1,3 +1,11 @@
+import sys,os
+import numpy as np
+import pandas as pd
+import seaborn as sns
+
+def nprint(mystring) :
+    print("# {:20s}: {}".format(sys._getframe(1).f_code.co_name,mystring))
+    
 def quick_overview_1d(df) :
     '''
     Prints useful statistics about the dataframe ...
